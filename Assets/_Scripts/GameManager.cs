@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     [Tooltip("Text component to show winner name.")]
     public TMP_Text winnerText;
 
-    private bool gameEnded = false;
+    public bool gameEnded = false;
     [Header("Audio Clips")]
     public AudioClip winSound;
     public AudioClip loseHealthSound;
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         if (gameEnded) return;
         gameEnded = true;
         Debug.Log($"🏆 Game Over! Winner: {winner.name}");
-
+       
         // Play win sound
         if (winSound != null)
             AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position);

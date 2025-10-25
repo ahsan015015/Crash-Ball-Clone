@@ -30,6 +30,8 @@ public class MidBouncer : MonoBehaviour
 
     IEnumerator BounceRoutine(float delay)
     {
+        if (GameManager.Instance.gameEnded)
+            yield break;
         // Wait before starting
         yield return new WaitForSeconds(delay);
 
@@ -46,7 +48,7 @@ public class MidBouncer : MonoBehaviour
         PlayAnimation();
     }
 
-    IEnumerator MoveToPosition(Vector3 target)
+     IEnumerator MoveToPosition(Vector3 target)
     {
         while (Vector3.Distance(transform.position, target) > 0.01f)
         {
@@ -57,7 +59,7 @@ public class MidBouncer : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<BallController>() != null)
+        if (collision.gameObject.GetComponent<BallController>() != null && !GameManager.Instance.gameEnded)
         {
 
             GameObject Last_HitByPlayer = collision.gameObject.GetComponent<BallController>().Last_HitByPlayer;
@@ -69,7 +71,7 @@ public class MidBouncer : MonoBehaviour
                 {
                     Deadline.SetActive(true);
                     DeadLineActive = true;
-                     Debug.Log("Starting " + Deadline.name );
+                     
                     StartCoroutine(DeactivateDeadlineAfterDelay(Deadline, 3f, 5f));
                 }
                 
@@ -89,7 +91,7 @@ public class MidBouncer : MonoBehaviour
     }
     IEnumerator DeactivateDeadlineAfterDelay(GameObject Deadline, float MinDelay, float MaxDelay)
     {   
-        Debug.Log("Starting " + Deadline.name + " Deactivation Coroutine");
+       
         float delay = Random.Range(MinDelay, MaxDelay);
         yield return new WaitForSeconds(delay);
         
