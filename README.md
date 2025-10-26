@@ -8,8 +8,8 @@ This project demonstrates real-time ball physics, player interactions, and obsta
 ## 🛠️ How to Run
 
 1. Clone the repository:  
-```bash
-git clone https://github.com/ahsan015015/Crash-Ball-Clone.git
+
+```bash git clone https://github.com/ahsan015015/Crash-Ball-Clone.git ```
 
 ## 🎮 Gameplay Overview
 
