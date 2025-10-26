@@ -72,6 +72,11 @@ I have tried to implement all the mechanisms from the video.. I have tried to se
 - **PlayerType.cs**: Defines multiple players (player1–player4) to support multiplayer gameplay.  
 
 ### Health System
-- **HealthManager.cs**: Stores player max health and can be extended for health UI and damage tracking.  
+- **HealthManager.cs**: Stores player max health and can be extended for health UI and damage tracking.
+
+### Player (Player.cs)
+- Stores player data, Updates health UI , Handles taking damage
+- Elimination and Death Logic
+- Control Death Sequence.
 
 ---
