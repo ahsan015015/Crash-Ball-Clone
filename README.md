@@ -34,7 +34,7 @@ I have tried to implement all the mechanisms from the video.. I have tried to se
 
 ---
 
-## ➕ Additional Additions
+## ➕ Additional Features
 - A central pillar that will give player a defense barrier for aa while when the player hit it with the ball.
 - 2 type of winning condition (changeable form unity editor). In the video i saw the mechanism is even if its the last man standing still he/she needs to play till the end. So I implemented that and additionally added a way to end it as soon as its the last man standing.
 
