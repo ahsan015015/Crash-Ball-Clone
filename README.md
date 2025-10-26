@@ -9,7 +9,9 @@ This project demonstrates real-time ball physics, player interactions, and obsta
 
 1. Clone the repository:  
 
-```bash git clone https://github.com/ahsan015015/Crash-Ball-Clone.git ```
+- ```bash git clone https://github.com/ahsan015015/Crash-Ball-Clone.git ```
+- Open the Game.unity scene
+- Press play.
 
 ## 🎮 Gameplay Overview
 
