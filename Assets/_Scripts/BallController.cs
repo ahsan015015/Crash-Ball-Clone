@@ -80,7 +80,7 @@ public class BallController : MonoBehaviour
         rb.velocity *= boostMultiplier;
         
             // Play hit sound
-         audioSource.PlayOneShot(GameManager.Instance.BallhitSound);
+         audioSource.PlayOneShot(SoundManager.Instance.BallhitSound);
 
         // Keep movement on XZ plane
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);

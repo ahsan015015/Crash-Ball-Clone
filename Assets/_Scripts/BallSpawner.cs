@@ -33,7 +33,7 @@ public class BallSpawner : MonoBehaviour
     private bool spawningActive = true;
     private List<GameObject> spawnedBalls = new List<GameObject>();
 
-    void Start()
+    public void StartGame()
     {
         StartCoroutine(SpawnLoop());
     }

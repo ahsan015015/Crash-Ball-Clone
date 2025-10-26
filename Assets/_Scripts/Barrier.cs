@@ -29,7 +29,7 @@ public class Barrier : MonoBehaviour
 
                 hitPlayer.TakeDamage();
             }
-             audioSource.PlayOneShot(GameManager.Instance.loseHealthSound);
+             audioSource.PlayOneShot(SoundManager.Instance.loseHealthSound);
             Destroy(other.gameObject);
         }
     }

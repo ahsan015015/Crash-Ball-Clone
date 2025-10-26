@@ -25,10 +25,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     public TMP_Text winnerText;
 
     public bool gameEnded = false;
-    [Header("Audio Clips")]
-    public AudioClip winSound;
-    public AudioClip loseHealthSound;
-    public AudioClip BallhitSound;
+   
 
     public Player GetPlayerByType(PlayerType.TypeOfPlayer type)
     {
@@ -90,8 +87,8 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         Debug.Log($"🏆 Game Over! Winner: {winner.name}");
        
         // Play win sound
-        if (winSound != null)
-            AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position);
+        if (SoundManager.Instance.winSound != null)
+            AudioSource.PlayClipAtPoint(SoundManager.Instance.winSound, Camera.main.transform.position);
 
         // Stop all spawning and destroy existing balls
         if (ballSpawner != null)
