@@ -81,4 +81,10 @@ I have tried to implement all the mechanisms from the video.. I have tried to se
 - Elimination and Death Logic
 - Control Death Sequence.
 
+### Audio System
+- SoundManager.cs: Manages global sound settings and persistence across scenes
+
+### UI Management
+- PanelController.cs: Controls switching between main UI panels (Main Menu, Gameplay, Settings)
+
 ---
