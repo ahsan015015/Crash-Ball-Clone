@@ -11,8 +11,6 @@ This project demonstrates real-time ball physics, player interactions, and obsta
 ```bash
 git clone https://github.com/ahsan015015/Crash-Ball-Clone.git
 
----
-
 ## 🎮 Gameplay Overview
 
 Crash-Ball-Clone is an arena where balls are launched and interact with players and obstacles. The main objective is eliminate opponents and survive.
